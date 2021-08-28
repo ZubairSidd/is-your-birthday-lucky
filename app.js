@@ -10,10 +10,14 @@ const handleClick = () => {
     sumOfDate += parseInt(date);
   }
   let isBdLucky = sumOfDate % parseInt(luckyNumber.value);
-  if (isBdLucky === 0) {
-    result.innerHTML = `${dates[2]} is lucky mate`;
+  if (!luckyNumber.value || luckyNumber.value == 0 || !dateInput.value) {
+    result.innerHTML = `Enter a valid Data`;
   } else {
-    result.innerHTML = `${dates[2]} is no lucky for you`;
+    if (isBdLucky === 0) {
+      result.innerHTML = `${dates[2]} is lucky mate`;
+    } else {
+      result.innerHTML = `${dates[2]} is no lucky for you`;
+    }
   }
 };
 
