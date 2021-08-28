@@ -11,9 +11,9 @@ const handleClick = () => {
   }
   let isBdLucky = sumOfDate % parseInt(luckyNumber.value);
   if (isBdLucky === 0) {
-    result.innerHTML = `${dates[2]} is your lucky birthday`;
+    result.innerHTML = `${dates[2]} is lucky mate`;
   } else {
-    result.innerHTML = `${dates[2]} is not your lucky birthday`;
+    result.innerHTML = `${dates[2]} is no lucky for you`;
   }
 };
 
